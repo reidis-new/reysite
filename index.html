@@ -26,6 +26,10 @@
                 aria-controls="panel-links" aria-selected="false" tabindex="-1" data-tab="links">
           Ссылки
         </button>
+        <button class="tab" type="button" role="tab" id="tab-app"
+                aria-controls="panel-app" aria-selected="false" tabindex="-1" data-tab="app">
+          Приложение
+        </button>
       </nav>
     </div>
   </header>
@@ -105,6 +109,76 @@
           <span class="link-arrow" aria-hidden="true">↗</span>
         </a>
       </div>
+    </section>
+
+    <!-- ================= ПРИЛОЖЕНИЕ ================= -->
+    <section class="panel" id="panel-app" role="tabpanel" aria-labelledby="tab-app" hidden>
+      <div class="panel-head">
+        <h2>Скачать приложение</h2>
+        <p class="panel-sub">
+          OrangeBeat — приложение для прослушивания музыки. Ниже — последняя версия для Android.
+        </p>
+      </div>
+
+      <div class="app-card">
+        <div class="app-head">
+          <span class="app-icon" aria-hidden="true">OB</span>
+          <div class="app-info">
+            <h3 class="app-name">OrangeBeat</h3>
+            <p class="app-version">
+              <span id="app-version">v1.9</span> ·
+              <span id="app-size">21,5 МБ</span> ·
+              Android (APK)
+            </p>
+          </div>
+        </div>
+
+        <div class="app-actions">
+          <a class="btn btn-primary"
+             id="app-download"
+             href="https://github.com/reidis-new/OrangeBeat/releases/download/OrangeBeat1.9/OrangeBeat-v1.9-debug.apk"
+             target="_blank" rel="noopener noreferrer">
+            Скачать APK
+          </a>
+          <a class="btn btn-secondary"
+             href="https://github.com/reidis-new/OrangeBeat/releases"
+             target="_blank" rel="noopener noreferrer">
+            Все релизы на GitHub
+          </a>
+        </div>
+
+        <p class="app-hint">
+          После скачивания разрешите установку из проводника или браузера.
+          Если кнопка не сработала — откройте страницу релизов на GitHub.
+        </p>
+      </div>
+
+      <h3 class="releases-title">История версий</h3>
+      <ul class="release-list" id="release-list">
+        <li class="release-item">
+          <span class="release-badge">1.9</span>
+          <span class="release-main">
+            <span class="release-name">OrangeBeat v1.9</span>
+            <span class="release-meta">18 ноября 2026 · 21,5 МБ</span>
+          </span>
+          <a class="release-link"
+             href="https://github.com/reidis-new/OrangeBeat/releases/download/OrangeBeat1.9/OrangeBeat-v1.9-debug.apk"
+             target="_blank" rel="noopener noreferrer">Скачать</a>
+        </li>
+        <li class="release-item">
+          <span class="release-badge">1.8</span>
+          <span class="release-main">
+            <span class="release-name">OrangeBeat v1.8</span>
+            <span class="release-meta">13 ноября 2026 · 21,5 МБ</span>
+          </span>
+          <a class="release-link"
+             href="https://github.com/reidis-new/OrangeBeat/releases/download/%23update/OrangeBeat-v1.8-debug.apk"
+             target="_blank" rel="noopener noreferrer">Скачать</a>
+        </li>
+      </ul>
+      <p class="releases-note" id="releases-note" hidden>
+        Не удалось загрузить список с GitHub — открыта последняя известная версия.
+      </p>
     </section>
   </main>
 
